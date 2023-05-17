@@ -1,9 +1,8 @@
-import { A, Route, Routes } from "@solidjs/router";
-import { createSignal } from "solid-js";
-
-import Home from "./pages/Home";
 import banner from "./assets/banner.png";
 import Cart from "./pages/Cart";
+import Home from "./pages/Home";
+import { A, Route, Routes } from "@solidjs/router";
+import { createSignal } from "solid-js";
 
 export default function App() {
   const [darkTheme, setDarkTheme] = createSignal(false);
