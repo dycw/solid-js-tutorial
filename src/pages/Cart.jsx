@@ -4,6 +4,12 @@ import { useCartContext } from "../context/CartContext";
 export default function Cart() {
   const { items } = useCartContext();
 
+  const total = () => {
+    return items.reduce((acc, el) => {
+      return acc + el.quantity * el.price;
+    }, 0);
+  };
+
   return (
     <div class="max-w-md my-8 mx-auto">
       <Card rounded={true}>
@@ -17,6 +23,9 @@ export default function Cart() {
               </p>
             )}
           </For>
+          <p class="mt-8 pt-4 border-t-2 font-bold">
+            Total cart price - ${total()}
+          </p>
         </Show>
       </Card>
     </div>
