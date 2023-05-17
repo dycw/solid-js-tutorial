@@ -1,6 +1,6 @@
 {
   "name": "vite-template-solid",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "",
   "scripts": {
     "start": "vite",
@@ -17,6 +17,7 @@
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
+    "@solidjs/router": "^0.8.2",
     "solid-js": "^1.6.10"
   }
 }
