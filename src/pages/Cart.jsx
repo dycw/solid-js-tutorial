@@ -8,13 +8,16 @@ export default function Cart() {
     <div class="max-w-md my-8 mx-auto">
       <Card rounded={true}>
         <h2>Your Shopping Cart</h2>
-        <For each={items}>
-          {(item) => (
-            <p class="my-3">
-              {item.title} - ${item.price} x {item.quantity}
-            </p>
-          )}
-        </For>
+
+        <Show when={items.length} fallback={<p>Your cart is empty.</p>}>
+          <For each={items}>
+            {(item) => (
+              <p class="my-3">
+                {item.title} - £{item.price} x {item.quantity}
+              </p>
+            )}
+          </For>
+        </Show>
       </Card>
     </div>
   );
