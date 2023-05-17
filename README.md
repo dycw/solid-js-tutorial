@@ -1,3 +1,3 @@
-# `template`
+# Solid JS Tutorial (The Net Ninja)
 
-Template for generic repositories
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9gU_GvFygZFu0aBysPilkbB
