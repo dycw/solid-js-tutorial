@@ -1,5 +1,5 @@
-import { For, Show, createResource } from "solid-js";
 import Card from "../components/Card";
+import { For, Show, createResource } from "solid-js";
 
 const fetchProducts = async () => {
   const res = await fetch("http://localhost:4000/products");
