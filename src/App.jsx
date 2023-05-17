@@ -3,6 +3,7 @@ import { createSignal } from "solid-js";
 import banner from "./assets/banner.png";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
+import Product from "./pages/Product";
 
 export default function App() {
   const [darkTheme, setDarkTheme] = createSignal(false);
@@ -33,6 +34,7 @@ export default function App() {
       <Routes>
         <Route path="/" component={Home} />
         <Route path="/cart" component={Cart} />
+        <Route path="/product/:id" component={Product} />
       </Routes>
     </div>
   );
